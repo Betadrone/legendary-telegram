@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form example</title>
+    
+</head>
+<body>
+    <!-- Typically, there are four actions we primarily do in html:
+    Get, post, put, delete -->
+    <form name="example form" action="#" method="POST">
+
+        <!-- Ask for name -->
+
+        <label for="fullname">Name:</label>
+        <input type="text" name="fullname" id="fullname">
+        <br><br>
+
+        <!-- Ask for email -->
+        
+        <label for="email">email:</label>
+        <input type="email" name="email" id="email">
+        <br><br>
+
+        
+        <label for="username">username</label>
+        <input type="text" name="usernamne" id="username">
+        <br><br>
+
+        
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <br><br>
+
+        
+        <label for="language">What languages do you know?</label>
+        <br>
+        c++<input type="checkbox" name="language1" id="language" value="1">
+        c#<input type="checkbox" name="language2" id="language" value="2">
+        python<input type="checkbox" name="language3" id="language" value="3">
+        javascript<input type="checkbox" name="language4" id="language" value="4">
+        <br><br>
+
+        
+        <label for="gender">gender: </label>
+        <input type="radio" name="gender" id="gender" value="5" checked>Male
+        <input type="radio" name="gender" id="gender" value="6" checked>Female
+        <input type="radio" name="gender" id="gender" value="7" checked>Other
+        <br><br>
+
+        
+        <label for="day">Date of Birth</label>
+
+        Day:<select name="day" id="day">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+        </select>
+
+        Month:<select name="month" id="month">
+            <option value="1">jan</option>
+            <option value="2">feb</option>
+            <option value="3">mar</option>
+            <option value="4">apr</option>
+            <option value="5">may</option>
+        </select>
+
+        year<select name="year" id="year">
+        <option value="1">2002</option>
+        <option value="2">2003</option>
+        <option value="3">2004</option>
+        <option value="4">2005</option>
+        <option value="5">2006</option>
+        </select>
+        <textarea name="comments" id="comment" cols="30" rows="10">Type any comments you would like</textarea>
+
+        <input type="submit" value="Click me, please">
+        
+    </form>
+
+</body>
+</html>
