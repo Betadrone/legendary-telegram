@@ -4,7 +4,7 @@ body#Portfolio_pg_2 {
 }
 
 body#Portfolio_pg_1 {
-    background-color: white;
+    background-color: rgb(224, 201, 166);
 }
 
 h1 {
@@ -44,7 +44,7 @@ p#Top, p#Bottom {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 25%;
 }
 
 blockquote.dotted {
@@ -53,7 +53,7 @@ blockquote.dotted {
 }
 
 div{
-    background-color: green;
+    background-color: rgb(0, 5, 51);
 }
 
 .solidBorder {
@@ -62,4 +62,20 @@ div{
 
 .video {
     border-style: dashed;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+}
+.column {
+    background-color: black;
+    border-style: double;
+    border-color: beige;
+}
+img {
+    border-style: solid;
+    border-color: blueviolet;
+    border-style: double;
 }
