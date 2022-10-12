@@ -58,6 +58,10 @@ div{
 
 .solidBorder {
     border-style: solid;
+    border-top-style: dotted;
+    border-left-style: dashed;
+    border-right-style: dashed;
+    border-width: 3px;
 }
 
 .video {
