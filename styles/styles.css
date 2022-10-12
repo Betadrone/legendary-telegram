@@ -47,9 +47,9 @@ p#Top, p#Bottom {
     width: 25%;
 }
 
-blockquote.dotted {
-    border-style: dotted;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+blockquote.inset {
+    border-style: inset;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Verdana, sans-serif;
 }
 
 div{
