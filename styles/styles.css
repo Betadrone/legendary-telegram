@@ -73,22 +73,27 @@ div{
     justify-content: space-around;
     background-color: black;
 }
+
 .column {
     background-color: black;
     border-style: double;
     border-color: beige;
 }
+
 img {
     border-style: solid;
     border-color: blueviolet;
     border-style: double;
 }
+
 .reset-style{
     background-color: black;
 }
+
 #Projects_Overview{
     border-radius: 50%;
 }
+
 
 .FavouriteGames{
     background-color: rgba(60, 255, 0, 0.801) ; 
@@ -101,3 +106,8 @@ img {
 .FoodDrink{
     background-color: grey;
 }
+
+.size_hr{
+    height: 3px;
+}
+3
