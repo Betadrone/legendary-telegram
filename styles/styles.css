@@ -89,3 +89,15 @@ img {
 #Projects_Overview{
     border-radius: 50%;
 }
+
+.FavouriteGames{
+    background-color: rgba(60, 255, 0, 0.801) ; 
+}
+
+.LikeDislike{
+    background-color: rgb(38, 203, 253);
+}
+
+.FoodDrink{
+    background-color: grey;
+}
