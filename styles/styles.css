@@ -83,3 +83,9 @@ img {
     border-color: blueviolet;
     border-style: double;
 }
+.reset-style{
+    background-color: black;
+}
+#Projects_Overview{
+    border-radius: 50%;
+}
