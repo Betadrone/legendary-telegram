@@ -23,36 +23,53 @@
         <tr>
             <td></td>
             <td style="text-align: center;">
-                <button type="button" name="button" onclick="add()">+</button>
-                <button type="button" name="button" onclick="subtract()">-</button>
-                <button type="button" name="button" onclick="multiply()">*</button>
-                <button type="button" name="button" onclick="divide()">/</button>
+                <button type="button" name="button" onclick="calculate(add)">+</button>
+                <button type="button" name="button" onclick="calculate(sub)">-</button>
+                <button type="button" name="button" onclick="calculate(mul)">*</button>
+                <button type="button" name="button" onclick="calculate(div)">/</button>
             </td>
         </tr>
     </table>
     <script type="text/javascript">
-        function add() {
+        // function add() {
+        //     var n1 = document.getElementById('1st').value;
+        //     var n2 = document.getElementById('2nd').value;
+        //     var result = parseFloat(n1) + parseFloat(n2);
+        //     document.getElementById('result').value = result;
+        // }
+        // function subtract() {
+        //     var n1 = document.getElementById('1st').value;
+        //     var n2 = document.getElementById('2nd').value;
+        //     var result = parseFloat(n1) - parseFloat(n2);
+        //     document.getElementById('result').value = result;
+        // }
+        // function multiply() {
+        //     var n1 = document.getElementById('1st').value;
+        //     var n2 = document.getElementById('2nd').value;
+        //     var result = parseFloat(n1) * parseFloat(n2);
+        //     document.getElementById('result').value = result;
+        // }
+        // function divide() {
+        //     var n1 = document.getElementById('1st').value;
+        //     var n2 = document.getElementById('2nd').value;
+        //     var result = parseFloat(n1) / parseFloat(n2);
+        //     document.getElementById('result').value = result;
+        // }
+        function calculate(add, sub, mul, div) {
             var n1 = document.getElementById('1st').value;
             var n2 = document.getElementById('2nd').value;
-            var result = parseFloat(n1) + parseFloat(n2);
-            document.getElementById('result').value = result;
-        }
-        function subtract() {
-            var n1 = document.getElementById('1st').value;
-            var n2 = document.getElementById('2nd').value;
-            var result = parseFloat(n1) - parseFloat(n2);
-            document.getElementById('result').value = result;
-        }
-        function multiply() {
-            var n1 = document.getElementById('1st').value;
-            var n2 = document.getElementById('2nd').value;
-            var result = parseFloat(n1) * parseFloat(n2);
-            document.getElementById('result').value = result;
-        }
-        function divide() {
-            var n1 = document.getElementById('1st').value;
-            var n2 = document.getElementById('2nd').value;
-            var result = parseFloat(n1) / parseFloat(n2);
+            if (this.add) {
+                var result = parseFloat(n1) + parseFloat(n2);
+            }
+            else if (this.sub) {
+                var result = parseFloat(n1) - parseFloat(n2);
+            }
+            else if (this.mul) {
+                var result = parseFloat(n1) * parseFloat(n2);
+            }
+            else if (this.div) {
+                var result = parseFloat(n1) / parseFloat(n2);
+            }
             document.getElementById('result').value = result;
         }
     </script>
