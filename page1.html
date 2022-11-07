@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hang-Man</title>
+</head>
+<body>
+    <div id="page1" style="display:block;">
+        <form>
+            <label for="hangManWord">Hangman Word:</label>
+            <br>
+            <input type="password" id="hangManWord" name="hangManWord" value="" required>
+            <br>
+            <button type="button" name="button" onclick="start()">Submit</button>
+            <br>
+            <p id="error" style="color: red;"></p>
+        </form>
+    </div>
+
+    <div id="page2" style="display:none;">
+        <form>
+            <img src="Assets\img0.png" height="350" width="250">
+            <br>
+            <!-- <input type="password" value="" id="guessWord"> -->
+            <p><b>Secret Word:</b></p>
+            <p id="guessWord"></p>
+            <br>
+            <label for="guess">Guess a letter:</label>
+            <br>
+            <input type="text" id="guess" name="userGuess" maxlength="1" value="" required>
+            <button type="button" name="button" onclick="guess()">Enter</button>
+        </form>
+    </div>
+
+    
+    <script type="text/javascript">
+
+        var word;
+        var clear = "";
+        
+        function start(){
+
+            let p1 = document.getElementById("page1");
+            let p2 = document.getElementById("page2");
+
+            word = document.getElementById("hangManWord").value;
+            console.log(word);
+
+            if (word.includes(" ") || document.getElementById("hangManWord").value == "") {
+
+                document.getElementById("error").innerHTML = "Please enter something...";
+                document.getElementById("error").innerHTML += " And only one word...";
+                document.getElementById("hangManWord").value = clear;
+
+            }
+            else{
+
+                p1.style.display = "none"
+                //p1.setAttribute("style", "display:none");
+                p2.style.display = "block"
+                //p1.setAttribute("style", "display:block");   
+                document.getElementById("guessWord").innerHTML = word;
+            }
+            
+        }
+
+        function guess(){
+
+
+
+        }
+
+    </script>
+    
+</body>
+</html>
